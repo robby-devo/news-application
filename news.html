@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/news.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <div id="main">
+      <div id="head">
+        <p>Author: <span>zee news</span></p>
+        <h1>iPhone 13 Pro for free? Heres what you need to know</h1>
+      </div>
+
+      <div id="imgSec">
+        <img
+          src="https://english.cdn.zeenews.com/sites/default/files/2021/12/12/995329-iphone-13-pro-max.jpg"
+          alt=""
+        />
+      </div>
+
+      <div id="desc">
+        <p></p>
+      </div>
+
+      <button id="btn">
+        <a href="">Read More</a>
+      </button>
+    </div>
+  </body>
+</html>
+<script type="module">
+  //   import { getNews, appendNews } from "./scripts/home.js";
+
+  import navbar from "./components/navbar.js";
+
+  let navigation = document.querySelector(".navbar");
+
+  navigation.innerHTML = navbar();
+</script>
+
+<script src="scripts/clicked.js"></script>

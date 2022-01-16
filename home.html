@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+
+    <main id="main">
+      <!-- start of mov -->
+      <!-- <div class="movie">
+        <img
+          src="https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/56E8/production/_121584222_tv072016879.jpg"
+          alt=""
+        />
+
+        <div class="movie-info">
+          <h3>Title</h3>
+        </div>
+
+        <div class="overview">
+          <h3>Overview</h3>
+          <p>
+            New guidance from the International Olympic Committee says there
+            should be no assumption that a transgender athlete automatically has
+            an unfair advantage in female events.
+          </p>
+        </div>
+      </div> -->
+      <!-- end of mov -->
+    </main>
+  </body>
+</html>
+
+<script type="module">
+  import { getNews, appendNews } from "./scripts/home.js";
+
+  import navbar from "./components/navbar.js";
+
+  let navigation = document.querySelector(".navbar");
+
+  navigation.innerHTML = navbar();
+</script>
